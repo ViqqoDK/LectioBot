@@ -12,9 +12,6 @@ db_file = r"students2.db"
 
 class LectioBot:
     def __init__(self, username, pw):
-        #self.driver = webdriver.Chrome(executable_path=r'E:\Programmer\webdrivers\chromedriver.exe')
-        #self.driver = webdriver.Chrome("E:/Programmer/webdrivers/chromedriver.exe")
-        #self.driver = webdriver.Chrome(ChromeDriverManager().install())
         self.driver = webdriver.Chrome('webdrivers/chromedriver.exe')
         self.driver.get("https://www.lectio.dk/lectio/33/login.aspx?prevurl=FindSkema.aspx%3ftype%3delev")
         self.driver.find_element_by_id('username')\
@@ -63,19 +60,3 @@ class LectioBot:
 
 bot = LectioBot(secrets.username, secrets.pw)
 
-# Billeder
-# BILLEDERID ER IKKE LINKET TIL ELEVID
-# https://www.lectio.dk/lectio/33/GetImage.aspx?pictureid=36739672331&fullsize=1
-# https://www.lectio.dk/lectio/33/GetImage.aspx?pictureid=29379119814&fullsize=1
-
-
-# VICTOR
-    # 29312237116 (ElevID)
-    # 29379119814 (BilledID)
-    # 66882698 Differens
-
-
-# ADAM
-    # BILLED: 36739557808
-    # Elevid: 36701211872
-    # 38345936 Differens
