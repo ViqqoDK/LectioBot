@@ -1,0 +1,2 @@
+username = "LECTIO_USERNAME_HERE"
+pw = "LECTIO_PASSWORD_HERE"
