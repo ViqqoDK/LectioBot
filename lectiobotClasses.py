@@ -1,5 +1,4 @@
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 from PIL import Image
@@ -74,9 +73,8 @@ class LectioBot:
             PersonIDs = []
             for Image, PersonID in zip(Images, PersonLink[4::]):
                 ImageIDs.append(Image.get_attribute("src"))
-                PersonIDs.append(PersonID.get_attribute("href").split("elevid=")[1])
+                PersonIDs.append(PersonID.get_attribute("href").split("studentID=")[1])
             
-            print("HELLO")
 
             for s in range(len(ImageIDs)):
                 # Save names to a csvfile
