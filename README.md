@@ -1,4 +1,4 @@
-# LectioBot
+# LectioBot (DEPRECATED)
 This is a webscraber designed to get names, classes, photos, files and more from the student portal Lectio.
 
 
@@ -9,4 +9,4 @@ This is a webscraber designed to get names, classes, photos, files and more from
  - Python3 and the libraries in the "requirements.txt" file
    - Can easily get downloaded using ```pip3 install -r requirements.txt```
  - Preparing credentials
-   - You'll need to fill out the "credentials.py" 
+   - You'll need to fill out the "secrets.py" 
